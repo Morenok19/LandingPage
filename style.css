@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Special Gothic Expanded One", sans-serif;
+}
+body {
+    background-image: url(img/2022-10-03_01-24-27.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.gimnasia {
+    background-image: url(img/IMG_3763.JPG);
+}
+.power
+/*Cabecera de index*/
+.index header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 40px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+   
+}
+.index header .logo {
+    text-align: center;
+    padding-top: 2rem;
+}
+.index header .logo h1 {
+    display: inline-block;
+    margin: auto;
+    color: white;
+    font-size: 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s;
+    background: rgb(17, 14, 219);
+    border-radius: 10px;
+    padding: 0px 10px;
+    font-weight: 600;
+}
+
+/*Navbar*/
+.index header .navbar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.index header .navbar li {
+    position: relative;
+    list-style: none;
+    margin: 0 20px;
+}
+.index header .navbar li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background: black;
+    border-radius: 10px;
+}
+.index header .navbar li a:hover {
+    color: black;
+    background: white;
+    border-bottom: 0.4rem solid rgb(17, 14, 219);
+    padding: 0.1rem;
+}
+.index header .navbar li ul {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    top: 100%;
+}
+.index header .navbar li:hover > ul{
+    display: block;
+}
+.index header .navbar li ul li {
+    margin: 0;
+    text-align: left;
+}
+.index header .navbar li ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background: black;
+    border-radius: 10px;
+    font-size: 1.2rem;
+
+}
+
+/*Contenido index (titulares)*/
+.contenido {
+    height: 40vh;
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin-left: 10rem;
+    margin-top: 40rem;
+}
+.contenido .tituloBox {
+    position: relative;
+    max-width: 800px;
+    text-align: center;
+}
+.contenido .tituloBox p {
+    font-size: 2rem;
+    line-height: 1.5;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+    padding: 0px 5px;
+    background: rgba(169, 20, 20, 0.9);
+    border-radius: 10px;
+    display: inline-block;
+}
+/*Formulario*/
+form {
+    width: 600px;
+    height: 800px;
+    border: 10px inset darkred;
+    color: black;
+    background-color:rgb(255, 255, 255, 0.5);
+    padding: 10px;
+    margin: auto;
+    margin-top: 10rem;
+    
+
+}
+fieldset {
+    border: 0px;
+}
+form fieldset .cabeceraSeccion{
+    font-size: 24px;
+    color: red;
+    text-align: center;
+    padding: 10px 0px;
+}
+form fieldset #cabeceraForm{
+    font-size: 32px;
+    color: white;
+    background: rgb(17, 14, 219);
+    padding: 0px 10px;
+    border-radius: 10px;
+
+}
+label {
+    display: block;
+    margin: 0.5rem;
+    text-align: left;
+}  
+label input {
+    display: block;
+    margin-top: 5px;
+    padding: 0.5rem;
+    width: 20rem;
+    max-width: 100%;
+}
+.radio-group {
+    text-align: left;
+    display: block;
+}
+.radiusButton {
+    display: inline-block;
+}
+.cabeceraPregunta {
+    display: block;
+    margin: 0.5rem;
+    text-align: left;
+}
+
+textarea {
+    margin: 0px;
+}
+#mensaje {
+    display: block;
+    text-align: center;
+    width: 35rem;
+    height: 5rem;
+}
+.botonesFormulario {
+    display: block;
+    margin-top: 2rem;
+    text-align: center;
+}
+.botonesFormulario input {
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    color: black;
+    background-color: lightgray
+}
+.botonesFormulario input:hover {
+    color: lightgray;
+    background-color: black;
+}
+/*Deportes*/
+
+.cabeceraDeportes {
+    text-align: center;
+    padding-top: 2rem;
+    text-transform: uppercase;
+}
+.cabeceraDeportes h1 {
+    display: inline-block;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.contenedorDeportes {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px;
+    grid-gap: 20px;
+    padding: 100px 0;
+    
+}
+.caja img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.caja img:hover {
+    transition: 0.5s;
+    transform: scale(1.03);
+}
+
+/*Responsive*/
+@media(max-width:992px) {
+    .contenedorDeportes{
+        padding: 30px;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .caja:nth-child(1) {
+        grid-column-start: span 1;
+    }
+    .caja:nth-child(4) {
+        grid-column-start: span 1;
+    }
+
+}
+
+/*Copyright*/
+.copyright {
+    position: relative;
+    width: fit-content;
+    margin-left: auto;
+    bottom: 0px;
+    right: 0px;
+    margin-right: 20px;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: black;
+    border-radius: 10px;
+}
+/*Botón regreso*/
+section .botonRegreso span a {
+    position: relative;
+    width: fit-content;
+    margin-left: auto;
+    right: 0px;
+    bottom: 0px;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    margin-right: 10rem;
+    display: flex;
+    justify-content: right;
+    font-size: 3rem;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    transition: 0.3s;
+}
+section .botonRegreso span a:hover {
+    color: black;
+    background: white;
+    border-bottom: 0.5rem solid rgb(17, 14, 219);
+    padding: 0.1rem;
+}
+/*Redes Sociales*/
+.redesSociales {
+    position: relative;
+    
+}
+.redesSociales ul {
+    
+    left: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content:left;
+    gap: 1rem;
+    align-items: center;
+    padding: 0px 100px 30px;
+    list-style: none;
+}
+.redesSociales li {
+    padding: 10px;
+}
+.redesSociales li a {
+    color: white;
+    font-size: 2.5rem;
+    transition: 0.3s;
+}
+.redesSociales li a:hover {
+    color: rgb(17, 14, 219);
+
+}
